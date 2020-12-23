@@ -1,18 +1,24 @@
-import React, { Component } from 'react';
-import './App.css';
+import {useState} from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Songs!</h1>
-        </header>
-        <br/>
-        <p>Songs go here</p>
-      </div>
-    );
-  }
+const creatureData = [
+  {name :'Unicorn', origin: 'Britain'},
+  {name : 'Sphinx', origin: 'Egypt'},
+  {name: 'Jackalope', origin: 'America'}
+];
+
+function App () {
+ 
+  const [creatureList, setCreatureList] = useState(creatureData)
+  
+  return (
+    <div>
+      <ul>
+        {creatureList.map(creature => 
+         (<li key={creature.name}>{creature.name} is from {creature.origin}</li>)
+        )}
+      </ul>
+    </div>
+  );
+
 }
 
-export default App;
