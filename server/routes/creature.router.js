@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 // Setup a POST route to add a new creature to the database
 router.post('/', (req, res) => {
     const creature = req.body;
-    const sqlText = `INSERT INTO creature (name, origin)
+    const sqlText = `INSERT INTO creatures (name, origin)
                      VALUES ($1, $2)`;
     // Let sql sanitize your inputs (NO Bobby Drop Tables here!)
     // the $1, $2, etc get substituted with the values from the array below
