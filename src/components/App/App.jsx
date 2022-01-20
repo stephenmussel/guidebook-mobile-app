@@ -1,14 +1,12 @@
 import {useState} from 'react';
 
-const creatureData = [
-  {name :'Unicorn', origin: 'Britain'},
-  {name : 'Sphinx', origin: 'Egypt'},
-  {name: 'Jackalope', origin: 'America'}
-];
-
 function App () {
  
-  const [creatureList, setCreatureList] = useState(creatureData)
+  const [creatureList, setCreatureList] = useState([
+    {name :'Unicorn', origin: 'Britain'},
+    {name : 'Sphinx', origin: 'Egypt'},
+    {name: 'Jackalope', origin: 'America'}
+  ]);
   
   return (
     <div>
