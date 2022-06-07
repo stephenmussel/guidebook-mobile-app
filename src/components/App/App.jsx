@@ -11,9 +11,11 @@ function App () {
   return (
     <div>
       <ul>
-        {creatureList.map(creature => 
-         (<li key={creature.name}>{creature.name} is from {creature.origin}</li>)
-        )}
+        {creatureList.map(creature => (
+          <li key={creature.name}>
+            {creature.name} is from {creature.origin}
+          </li>
+        ))}
       </ul>
     </div>
   );
