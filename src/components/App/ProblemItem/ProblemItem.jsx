@@ -38,8 +38,8 @@ function ProblemItem({ each }) {
             </p>
             {/* <p>{each.problem_num} {each.problem}</p> */}
 
-            {/* <p>stars: {each.stars}</p> */}
-            <p>{each.description}</p>
+            {/* displays FA if one exists */}
+            <p>{each.description} {each.fa ? <em><b>FA </b>{each.fa} </em> : ''}</p>
             {/* <p>fa: {each.fa}</p> */}
         </div>
     )
