@@ -31,16 +31,19 @@ function App() {
     });
   };
 
+  useEffect(() => {
+    fetchProblems();
+    fetchZones();
+  }, [])
+
   return (
     <div className='App'>
       {/* {JSON.stringify(problems)} */}
       <ZoneList 
         zones={zones}
-        fetchZones={fetchZones}
       />
       <ProblemList 
         problems={problems}
-        fetchProblems={fetchProblems}
       />
     </div>
   );

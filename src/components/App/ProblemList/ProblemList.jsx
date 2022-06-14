@@ -1,11 +1,6 @@
-import { useEffect } from 'react';
 import ProblemItem from '../ProblemItem/ProblemItem';
 
-function ProblemList({ problems, fetchProblems }) {
-
-    useEffect(() => {
-        fetchProblems();
-    }, [])
+function ProblemList({ problems }) {
 
     return (
         <>
