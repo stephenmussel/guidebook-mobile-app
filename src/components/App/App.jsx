@@ -1,25 +1,31 @@
-import {useState} from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import './App.css';
 
-function App () {
- 
-  const [creatureList, setCreatureList] = useState([
-    {name :'Unicorn', origin: 'Britain'},
-    {name : 'Sphinx', origin: 'Egypt'},
-    {name: 'Jackalope', origin: 'America'}
-  ]);
-  
+function App() {
+
+  const [problems, setProblems] = useState([]);
+
+  const fetchProblems = () => {
+    console.log('in fetchProblems!');
+
+    axios.get('/mn/problems').then(response => {
+      console.log('these are the problems', response);
+      setProblems(response.data);
+    }).catch(err => {
+      console.log('err in fetchProblems!', err);
+    });
+  };
+
+  useEffect(() => {
+    fetchProblems();
+  }, [])
+
   return (
-    <div>
-      <ul>
-        {creatureList.map(creature => (
-          <li key={creature.name}>
-            {creature.name} is from {creature.origin}
-          </li>
-        ))}
-      </ul>
+    <div className='App'>
+      {/* {JSON.stringify(problems)} */}
     </div>
   );
-
 }
 
 export default App
