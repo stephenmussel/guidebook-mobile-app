@@ -9,6 +9,7 @@ function App() {
 
   const [problems, setProblems] = useState([]);
   const [zones, setZones] = useState([]);
+  const [areas, setAreas] = useState([]);
 
   const fetchProblems = () => {
     console.log('in fetchProblems!');
@@ -32,15 +33,27 @@ function App() {
     });
   };
 
+  const fetchAreas = () => {
+    console.log('in fetchAreas!');
+
+    axios.get('/mn/areas').then(response => {
+      console.log('these are the areas', response);
+      setAreas(response.data);
+    }).catch(err => {
+      console.log('err in fetchAreas!', err);
+    });
+  };
+
   useEffect(() => {
     fetchProblems();
     fetchZones();
+    fetchAreas();
   }, [])
 
   return (
     <div className='App'>
       <AreaList 
-      
+        areas={areas}
       />
       <ZoneList 
         zones={zones}
