@@ -1,0 +1,42 @@
+.circle-green {
+    display: inline-block;
+    border-radius: 100px;
+    background: green;
+    color : white;
+    padding : 10px 15px;
+  }
+  .circle-blue {
+    display: inline-block;
+    border-radius: 100px;
+    background: blue;
+    color : white;
+    padding : 10px 15px;
+  }
+  .circle-orange {
+    display: inline-block;
+    border-radius: 100px;
+    background: orangered;
+    color : white;
+    padding : 10px 15px;
+  }
+  .circle-pink {
+    display: inline-block;
+    border-radius: 100px;
+    background: fuchsia;
+    color : white;
+    padding : 10px 15px;
+  }
+  .circle-black {
+    display: inline-block;
+    border-radius: 100px;
+    background: black;
+    color : white;
+    padding : 10px 15px;
+  }
+  .boulder-name {
+    display: inline-block;
+    background: blue;
+    color: white;
+    padding: 5px 10px 5px 10px;
+  }
+  

@@ -9,7 +9,7 @@ function ProblemList({ problems, fetchProblems }) {
 
     return (
         <>
-            <h1>Problem List...</h1>
+            {/* <h1>Problem List...</h1> */}
             {problems.map(each => (
                 <ProblemItem 
                     each={each}
