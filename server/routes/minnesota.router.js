@@ -7,7 +7,21 @@ router.get('/problems', (req, res) => {
     const sqlText = `SELECT * FROM problems ORDER BY id;`;
     pool.query(sqlText)
         .then((result) => {
-            console.log(`Got stuff back from the database`, result);
+            console.log(`Problems from the database`, result);
+            res.send(result.rows);
+        })
+        .catch((error) => {
+            console.log(`Error making database query ${sqlText}`, error);
+            res.sendStatus(500); // Good server always responds
+        });
+});
+
+// GET route for all zones
+router.get('/zones', (req, res) => {
+    const sqlText = `SELECT * FROM zones ORDER BY id;`;
+    pool.query(sqlText)
+        .then((result) => {
+            console.log(`Zones from the database`, result);
             res.send(result.rows);
         })
         .catch((error) => {
@@ -15,4 +29,5 @@ router.get('/problems', (req, res) => {
             res.sendStatus(500); // Good server always responds
         })
 })
+
 module.exports = router;
