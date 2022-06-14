@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import ProblemList from './ProblemList/ProblemList';
 import ZoneList from './ZoneList/ZoneList';
+import AreaList from '../AreaList/AreaList';
 
 function App() {
 
@@ -38,7 +39,9 @@ function App() {
 
   return (
     <div className='App'>
-      {/* {JSON.stringify(problems)} */}
+      <AreaList 
+      
+      />
       <ZoneList 
         zones={zones}
       />
