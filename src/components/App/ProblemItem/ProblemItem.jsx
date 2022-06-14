@@ -8,7 +8,6 @@ function ProblemItem({ each }) {
             <h3 className={each.problem_num != 1 ? '' : 'boulder-name'}>
                 <b>{each.problem_num === 1 ? each.boulder_name : ''}</b>
             </h3><br />
-            {/* <p><b>{each.boulder_name}</b></p> */}
 
             {/* conditionally renders color of circle based on grade */}
             <p className={
@@ -36,11 +35,9 @@ function ProblemItem({ each }) {
                                     each.stars === 1 ? '\u2605' : ""
                 }
             </p>
-            {/* <p>{each.problem_num} {each.problem}</p> */}
 
             {/* displays FA if one exists */}
             <p>{each.description} {each.fa ? <em><b>FA </b>{each.fa} </em> : ''}</p>
-            {/* <p>fa: {each.fa}</p> */}
         </div>
     )
 }
