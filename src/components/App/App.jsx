@@ -18,13 +18,9 @@ function App() {
     });
   };
 
-  useEffect(() => {
-    fetchProblems();
-  }, [])
-
   return (
     <div className='App'>
-      {JSON.stringify(problems)}
+      {/* {JSON.stringify(problems)} */}
       <ProblemList 
         problems={problems}
         setProblems={setProblems}
