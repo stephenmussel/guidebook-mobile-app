@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import ProblemList from './ProblemList/ProblemList';
 
 function App() {
 
@@ -24,6 +25,11 @@ function App() {
   return (
     <div className='App'>
       {JSON.stringify(problems)}
+      <ProblemList 
+        problems={problems}
+        setProblems={setProblems}
+        fetchProblems={fetchProblems}
+      />
     </div>
   );
 }
