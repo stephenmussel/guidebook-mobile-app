@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className='App'>
-      {/* {JSON.stringify(problems)} */}
+      {JSON.stringify(problems)}
     </div>
   );
 }
