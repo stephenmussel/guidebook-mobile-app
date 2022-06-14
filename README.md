@@ -11,6 +11,13 @@ _Duration: 2 Day Sprint_
     - [ ] Areas table
     - [ ] Zones table
     - [ ] Problems table
-- [ ] Display problems
-- [ ] Display zones
-- [ ] Display areas
+- [x] Display problems
+- [x] Display zones
+- [x] Display areas
+- [ ] Style w/MUI
+- [ ] UX for web vs mobile?
+- [ ] Google API for GPS location of:
+    - [ ] Areas
+    - [ ] Zones
+    - [ ] Boulders
+
