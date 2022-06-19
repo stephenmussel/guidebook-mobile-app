@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
-import ProblemList from './ProblemList/ProblemList';
-import ZoneList from './ZoneList/ZoneList';
+import ProblemList from '../ProblemList/ProblemList';
+import ZoneList from '../ZoneList/ZoneList';
 import AreaList from '../AreaList/AreaList';
 
 function App() {

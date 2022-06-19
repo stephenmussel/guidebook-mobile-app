@@ -1,4 +1,4 @@
-import ZoneItem from "../../ZoneItem/ZoneItem";
+import ZoneItem from "../ZoneItem/ZoneItem";
 
 function ZoneList({ zones }) {
     return (
