@@ -7,7 +7,7 @@
 
 I've already published a 500+ page paper guidebook for the state of Minnesota and Wisconsin in 2017. We sold out of copies in 2020, but are doing another reprint with some updates for the fall of 2022. As much as I like the printed version and the feel of a physical book, there are possiblities with a mobile version that are very appealing.
 
-This will document my journey in learning to make a mobile app with React Native. I have experience with React but not React Native. I'm not sure where to start but here we go...
+This will document my journey in learning how to make a mobile app with `React Native`. I have experience with `React` but not `React Native`. I'm not sure where to start but here we go...
 
 <!-- Updates -->
 ## Updates
