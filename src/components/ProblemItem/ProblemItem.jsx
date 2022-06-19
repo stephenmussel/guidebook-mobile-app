@@ -25,7 +25,7 @@ function ProblemItem({ each }) {
             </p>
             <p>
                 {/* displays name of problem and grade like: V5, VB, Project, etc. */}
-                <b>{each.problem}</b> {each.grade === 'B' ? 'VB' : each.project ? 'Project' : 'V' + each.grade} {
+                <b>{each.problem}</b> {each.grade === 'B' ? 'VB' : each.grade === 'Project' ? 'Project' : 'V' + each.grade} {
 
                     // TODO: there's a better way to do this!
                     // displays number of stars for each problem
