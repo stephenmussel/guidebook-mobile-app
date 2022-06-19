@@ -52,12 +52,12 @@ function App() {
 
   return (
     <div className='App'>
-      <AreaList 
+      {/* <AreaList 
         areas={areas}
       />
       <ZoneList 
         zones={zones}
-      />
+      /> */}
       <ProblemList 
         problems={problems}
       />

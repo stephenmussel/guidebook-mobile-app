@@ -19,8 +19,9 @@ function ProblemItem({ each }) {
                                     each.project ? 'circle-black' : '' // Project
             }
             >
-                {/* determines whether it's a problem or a variation. if it's a variation, the number is replaced with a `V` */}
-                {each.variation ? <b>V</b> : <b>{each.problem_num}</b>}
+                {/* determines whether it's a problem or a variation. if it's a variation, `V` is added to the problem number */}
+                {each.variation === 0 ? <b>{each.problem_num}</b> : <b>{each.problem_num}V</b>}
+
             </p>
             <p>
                 {/* displays name of problem and grade like: V5, VB, Project, etc. */}
