@@ -16,7 +16,7 @@ function ProblemItem({ each }) {
                         each.grade <= 8 ? 'circle-orange' : // 6-8
                             each.grade < 17 ? 'circle-pink' : // 9-16
                                 each.grade === 'B' ? 'circle-green' : // VB
-                                    each.project ? 'circle-black' : '' // Project
+                                    each.grade === 'Project' ? 'circle-black' : '' // Project
             }
             >
                 {/* determines whether it's a problem or a variation. if it's a variation, `V` is added to the problem number */}
