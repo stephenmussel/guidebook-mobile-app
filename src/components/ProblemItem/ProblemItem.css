@@ -33,6 +33,8 @@
     color : white;
     padding : 10px 15px;
   }
+
+  /* should only apply to the first problem of a boulder. subsequent problems should not list boulder name/style */
   .boulder-name {
     display: inline-block;
     background: blue;
