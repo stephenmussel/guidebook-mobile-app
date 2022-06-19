@@ -16,22 +16,27 @@ _Duration: 2 Day Sprint (1.13-14.22)_
 
 I decided to focus on the data at the start. How will the database be designed? How do I get the data in there?
 
-I transferred some sample data from the guidebook into a spreadsheet and exported as a CSV. From there, I was able to import everything into `PostgreSQL`. Then I was able to display the data from the following tables: Areas, Zones, and Problems using `React`. Areas are like cities, Zones are like neighborhoods, and Problems are like food items at restaurants.
+I transferred some sample data from the guidebook into a spreadsheet and exported as a CSV. From there, I was able to import everything into `PostgreSQL`. I displayed the data from the following tables: Areas, Zones, and Problems using `React`. Areas are like cities, Zones are like neighborhoods, and Problems are like restaurants in a neighborhood.
 
-<!-- TODO: I'll work on styling the components to get a better understanding of the UI/UX -->
+_Duration: 2 Day Sprint (1.18-19.22)_
+
+Worked on database schema. Removed `Project` column in my `Problems` table because it was redundant. Changed my `Variation` column from a BOOLEAN to an INT because problems can have multiple variations and it makes it easier to add and sort later.
+
+After chatting with a senior dev, I'm going to start moving these pieces into `React Native`. Additionally, I'll be researching existing guidebook apps that are available in the climbing industry and other apps that provide similar features.
+
 
 <!-- Checklist -->
 ## Checklist
 
-- [ ] Database design (beta)
-    - [ ] Areas table
-    - [ ] Zones table
-    - [ ] Problems table
+- [x] Database design (beta)
+    - [x] Areas table
+    - [x] Zones table
+    - [x] Problems table
 - [x] Display problems
 - [x] Display zones
 - [x] Display areas
-- [ ] Style w/MUI
-- [ ] UX for web vs mobile?
+- [ ] Research other climbing guidebook apps and apps that provide similar features
+- [ ] Research UX
 - [ ] Google API for GPS location of:
     - [ ] Areas
     - [ ] Zones
