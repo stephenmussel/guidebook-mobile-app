@@ -4,7 +4,7 @@ function ProblemItem({ each }) {
     return (
         <div>
 
-            {/* conditionally renders new boulder name if the problem_num is 1 (start of a new boulder) and it's not a variation */}
+            {/* conditionally renders new boulder name if the problem_num is 1 (start of a new boulder) and it's not a variation and adds styling */}
             <h3 className={each.problem_num === 1 && each.variation === 0 ? 'boulder-name' : ''}>
                 <b>{each.problem_num === 1 && each.variation === 0 ? each.boulder_name : ''}</b>
             </h3><br />
